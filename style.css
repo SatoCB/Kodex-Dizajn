@@ -152,12 +152,20 @@ body {
     padding: 40px;
     text-align: center;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: all 0.3s ease; /* Glatka tranzicija za sve parametre */
+    
+    /* KLJUČNA POPRAVKA: */
+    border: 1px solid transparent; /* Border postoji, ali je providan */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--primary-color); /* Samo menjamo boju već postojećeg bordera */
+    background: #282828; /* Blago posvetlimo pozadinu radi boljeg efekta */
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1); /* Opciono: dodajemo blagi sjaj */
 }
 
 .service-card i {
