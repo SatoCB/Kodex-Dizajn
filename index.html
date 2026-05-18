@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kodex Dizajn | Izrada Web Sajtova Stara Pazova</title>
+    <title>Kodex Dizajn</title>
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome za ikonice -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -13,20 +13,24 @@
 <body>
 
     <!-- Navigacija -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Kodex <span>Dizajn</span></div>
-            <ul class="nav-links">
-                <li><a href="#pocetna">Početna</a></li>
-                <li><a href="#usluge">Usluge</a></li>
-                <li><a href="#o-nama">O nama</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">Kodex<span>Dizajn</span></div>
+        <!-- Dodata klasa "nav-menu" -->
+        <ul class="nav-links nav-menu">
+            <li><a href="#pocetna" class="nav-item">Početna</a></li>
+            <li><a href="#usluge" class="nav-item">Usluge</a></li>
+            <li><a href="#o-nama" class="nav-item">O nama</a></li>
+            <li><a href="#kontakt" class="nav-item">Kontakt</a></li>
+        </ul>
+        <!-- Hamburger ikonica -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Hero Sekcija -->
 <header id="pocetna" class="hero">
@@ -104,7 +108,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Kodex Dizajn - Stara Pazova. Sva prava zadržana.</p>
+            <p>&copy; 2026 Kodex Dizajn. Sva prava zadržana.</p>
         </div>
     </footer>
 
